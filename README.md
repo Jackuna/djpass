@@ -15,5 +15,17 @@ It has cool features like
 
 * Refresh dialog to regenerate same desired password length.
 
-* More features yet to be added.
+* Copy Content to avoid noisy data within password.
 
+### Snapshots 
+
+![djpass Home](https://github.com/Jackuna/djpass/blob/master/IndexPage.png)
+
+![djpass Data](https://github.com/Jackuna/djpass/blob/master/GenPassPage.png)
+
+![djpass Copy Content](https://github.com/Jackuna/djpass/blob/master/CopyDataPopup.png)
+
+
+### Installaton & Configuration
+
+`` On it's way.... Coming Soon ``
