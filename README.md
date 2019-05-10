@@ -27,26 +27,33 @@ It has cool features like
 As a docker container.
 
 * Download djpass docker imager
-   ```docker pull jackuna/djpass
+
+   ```
+   docker pull jackuna/djpass
    ```
   Once the image has been downloded, find the image and initiate a container using it's corrosponding image ID.
-  Find Image Id from the below docker command
+  Find Image Id using docker command
    ``
    docker images 
    ``
    
-   Now run the container.
+* Now run the container.
    
    ```
     docker run -td --name djpass -p 9090:9090 < IMAGE ID >
    ```
-   Login into the container and initiate our djpass django app
+* Login into the container and initiate our djpass django app
    
    ```
+   docker exec -it djpass /bin/bash
+   
    cd /usr/local/djpass/
    
-   python3 manage.py runserver 0.0.0.0:9090
+   python3 manage.py runserver 0.0.0.0:9090 &
    ```
+  Hit Ctr+C as we have already initiated the django server in background.
+  
+  Access the application from url `` http://<your host ip > : 9090/djpass```
    
    
    
