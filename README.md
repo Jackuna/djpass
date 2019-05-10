@@ -53,7 +53,9 @@ As a docker container.
    ```
   Hit Ctr+C as we have already initiated the django server in background.
   
-  Access the application from url `` http://<your host ip > : 9090/djpass```
+  Access the application from below url 
+  
+  `` http://<your host ip > : 9090/djpass``
    
    
    
