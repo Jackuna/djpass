@@ -19,13 +19,34 @@ It has cool features like
 
 ### Snapshots 
 
-![djpass Home](https://github.com/Jackuna/djpass/blob/master/IndexPage.png)
-
-![djpass Data](https://github.com/Jackuna/djpass/blob/master/GenPassPage.png)
-
-![djpass Copy Content](https://github.com/Jackuna/djpass/blob/master/CopyDataPopup.png)
+![djpass Home](https://github.com/Jackuna/djpass/blob/master/djPassDemo.gif)
 
 
 ### Installaton & Configuration
 
-`` On it's way.... Coming Soon ``
+As a docker container.
+
+* Download djpass docker imager
+   ```docker pull jackuna/djpass
+   ```
+  Once the image has been downloded, find the image and initiate a container using it's corrosponding image ID.
+  Find Image Id from the below docker command
+   ``
+   docker images 
+   ``
+   
+   Now run the container.
+   
+   ```
+    docker run -td --name djpass -p 9090:9090 < IMAGE ID >
+   ```
+   Login into the container and initiate our djpass django app
+   
+   ```
+   cd /usr/local/djpass/
+   
+   python3 manage.py runserver 0.0.0.0:9090
+   ```
+   
+   
+   
