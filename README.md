@@ -55,7 +55,9 @@ As a docker container.
   
   Access the application from below url 
   
-  `` http://<your host ip > : 9090/djpass``
+  `` http://localhost:9090/djpass``
+  
+  Please note this application is meant to use on localhost only, certain config changes are required to use it from remote host.
    
    
    
