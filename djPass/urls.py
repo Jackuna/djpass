@@ -20,5 +20,6 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('djPassApp.urls')),
     path('djpass/', include('djPassApp.urls')),
 ]
